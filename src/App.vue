@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="whole-container">
+    <!--<div class="whole-container">
       <sidebar-component
         @width="setWidth"
       />
@@ -9,7 +9,8 @@
         <ContentComponent />
         <FooterComponent />
       </div>
-    </div>
+    </div>-->
+    <BaseComponent />
   </div>
 </template>
 
@@ -18,9 +19,11 @@
   import HeaderComponent from "./components/HeaderComponent";
   import ContentComponent from "./components/ContentComponent";
   import FooterComponent from "./components/FooterComponent";
+  import BaseComponent from "./components/BaseComponent";
 export default {
   name: 'app',
   components: {
+    BaseComponent,
     FooterComponent,
     ContentComponent,
     HeaderComponent,
